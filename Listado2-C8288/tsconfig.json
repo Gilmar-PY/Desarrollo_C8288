@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                   // Compila a ES6 o más reciente
+    "module": "commonjs",               // Usa el sistema de módulos CommonJS
+    "strict": true,                     // Activa la verificación estricta de tipos
+    "outDir": "./dist",                 // Coloca los archivos compilados en la carpeta dist
+    "rootDir": "./src",                 // Especifica la carpeta raíz de los archivos TypeScript
+    "esModuleInterop": true,            // Permite la interoperabilidad entre ES y CommonJS
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"]               // Incluye todos los archivos .ts en la carpeta src
+}
+
