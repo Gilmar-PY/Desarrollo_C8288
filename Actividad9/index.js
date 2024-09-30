@@ -51,3 +51,40 @@ server.get("/components/weather", function (_req, res) {
 server.listen(port, function () {
     console.log("Servidor escuchando en el puerto " + port);
 });
+/*
+Paso 2: Crear el Servidor Express.js
+
+    Instalar las dependencias de Express:
+    npm install express
+
+Instalar TypeScript:
+    Instala TypeScript Node.js y Express:
+    npm install typescript @types/node @types/express --save-dev
+
+Configurar TypeScript:
+    Genera un archivo de configuración de TypeScript (tsconfig.json) ejecutando:
+    npx tsc --init
+
+
+    Explicación del código:
+        Se define un servidor básico de Express.js que escucha en el puerto 3000.
+        Cuando se accede a la ruta /components/weather, se sirve el archivo weather.xhtml desde la carpeta public.
+        path.join se utiliza para generar una ruta válida que apunte al archivo HTML dentro del directorio public.
+
+Paso 3: Transpilar TypeScript y Ejecutar el Servidor
+
+    Transpilar el código TypeScript a JavaScript:
+        Transpila el archivo TypeScript (index.ts) a JavaScript ejecutando:
+    npx tsc
+
+Iniciar el servidor:
+    Ejecuta el servidor transpiliado en JavaScript con Node.js:
+    node index.js
+
+Verificar la aplicación en el navegador:
+Abre tu navegador y visita:
+http://localhost:3000/components/weather
+
+Verás la interfaz de React con un mensaje sobre el clima y un contador
+que se incrementa cada vez que haces clic en el texto.
+*/
